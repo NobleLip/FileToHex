@@ -13,4 +13,4 @@ This is a extremely simple script but really usefull to analyze HEX even tho onl
 
 Use:
 * python3 PyHex.py -f File
-![Test](Git.PNG)
+![Test](Git.png)
