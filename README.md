@@ -9,7 +9,7 @@
                                          
 ```
 
-This is a extremely simple script, the only purpose is to show the hex data of any file.
+This is a extremely simple script but really usefull to analyze HEX even tho only purpose is to show the hex data of any file.
 
 Use:
 * python3 PyHex.py -f File
