@@ -10,3 +10,6 @@
 ```
 
 This is a extremely simple script, the only purpose is to show the hex data of any file.
+
+Use:
+*python3 PyHex.py -f File
