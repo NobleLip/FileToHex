@@ -11,14 +11,27 @@ Buff = f.read()
 
 Bytes = 0
 Groups =0
+NumGroups = 0
+Phrase = ''
+
+print(str(NumGroups).zfill(8), end=' ')
 for i in Buff:
 	if Bytes % 16 == 0 and Bytes != 0:
-		print('')
+		print("    "+repr(Phrase)[1:-1])
+		Phrase = ''
+		NumGroups += 10
+		print(str(NumGroups).zfill(8), end=' ')
+		Bytes = 0
 	if Groups % 2 == 0:
 		print(' ', end= '')
 		Groups = 0
 
 	print(i.encode('latin1').hex() , end='')
+	Phrase += i
+
 	Bytes = Bytes + 1 
 	Groups = Groups + 1
+
+print(" "*(34-Bytes), end='')
+print("     "+repr(Phrase)[1:-1])
 print('\n')

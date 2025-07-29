@@ -1,4 +1,4 @@
-# FileToHex
+# 🛠️ FileToHex
 
 ```
  _____ _ _     _____     _   _           
@@ -9,8 +9,44 @@
                                          
 ```
 
-This is a extremely simple script but really usefull to analyze HEX even tho only purpose is to show the hex data of any file.
+A super simple but handy Python script to display the hexadecimal (HEX) representation of any file.  
+Useful for quick HEX analysis, debugging, or just exploring file contents in a readable format.
 
-Use:
-* python3 PyHex.py -f File
-![Test](Git.png)
+## ✨ Features
+
+- 📄 Converts any file to a formatted HEX dump
+- 🧑‍💻 Shows both HEX and ASCII representation side by side
+- 🏷️ Displays offsets for easy navigation
+- 🖥️ Command-line interface
+
+## 🚀 Usage
+
+1. **Run the script with the `-f` flag and your file name:**
+
+   ```sh
+   python3 PyHex.py -f <filename>
+   ```
+
+   Example:
+   ```sh
+   python3 PyHex.py -f example.txt
+   ```
+
+2. **Output:**  
+   The script prints the HEX dump to your terminal, similar to classic hex editors.
+
+   ![Test](Git.png)
+
+
+## 📦 Files
+
+- `PyHex.py` — The main script
+- `Git.png` — Example output screenshot
+- `README.md` — This file
+
+## 📝 Notes
+
+- The script reads files using `latin1` encoding to support binary data.
+- Only for educational and quick-inspection purposes; not a replacement for full-featured hex editors.
+
+
